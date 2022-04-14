@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a:focus,
+a:hover,
+a:active,
+input:focus,
+input:hover,
+input:active,
+button:focus,
+button:hover,
+button:active {
+  outline: 0;
+}
+
+body {
+  @apply subpixel-antialiased font-mono;
+}
+
+video {
+  @apply h-screen w-full bg-black z-0;
+}
+
+video::-webkit-media-controls {
+  @apply hidden;
+}
